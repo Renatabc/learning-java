@@ -173,3 +173,12 @@ findById(int id){} //encontrarPorId
     - exceções são comuns na execução de métodos. As vezes é necessário prever e tratar a possível existência.
 - Qual a visibilidade do método?
     - será necessário que o método seja visível a toda aplicação, somente em mesmo pacotes, através de herança ou somente a nível da própria classe.
+### Escopo
+
+Pode ser entendido como o ambiente onde uma variável pode ser acessada. Em Java, o escopo vai de acordo com o bloco onde foi declarada.
+
+A variável é criada no primeiro acesso a ela, tornando-se inacessível após o interpretador sair do bloco de execução ao qual ela pertence. Portanto, esta variável não pode ser lida ou manipulada por rotinas e códigos que estão fora do seu bloco de declaração, ou seja, fora do escopo da variável.
+
+Em uma classe, podemos visualizar a diferença de escopos. Os atributos são declarados no corpo principal da Classe, sendo portanto acessíveis por todos os métodos.
+
+Caso declare uma variável dentro de um método, o escopo está limitado apenas ao corpo, ou seja, dentro das chaves que limitam o método.
