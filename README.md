@@ -130,3 +130,46 @@ Variável é uma área da memória, associada a um nome, que pode armazenar valo
 No Java utilizamos identificadores que representam uma referência a um valor de memória, e esta referência pode ser redirecionada e outro valor, sendo portanto a causa do nome “variável”.
 
 Já as **Constantes** são valores armazenados em memória que não podem ser modificados depois de declarados. São representados pela palavra reservada *final*, seguida do tipo. São sempre escritas em CAIXA ALTA.
+
+### Métodos
+
+Correspondem a **funções** ou **sub-rotinas** disponíveis dentro das nossas classes.
+
+**Critérios** (não obrigatórios, mas recomendável):
+
+- Deve ser nomeado como verbo;
+- Seguir o padrão camelCase.
+
+```java
+somar (int n1, int n2){}
+
+abrirConexao(){}
+
+concluirProcessamento(){}
+
+findById(int id){} //encontrarPorId
+```
+
+<aside>
+⚠️ Não existe em Java o conceito de métodos globais. Todos os métodos devem sempre ser definidos dentro de uma classe.
+
+</aside>
+
+**Critérios de definição dos métodos:**
+
+- Qual a proposta principal do método?
+    - você deve se perguntar constantemente até compreender a real finalidade do mesmo.
+- Qual o tipo de retorno esperado após executar o método?
+    - você deve analisar se o método será responsável por retomar algum valor ou não.
+
+<aside>
+⚠️ Caso não retorne nenhum valor, ele será representado pela palavra-chave *void*.
+
+</aside>
+
+- Quais os parâmetros serão necessários para execução do método?
+    - os métodos as vezes precisam de argumentos como critérios para a execução.
+- O método possui o risco de apresentar alguma exceção?
+    - exceções são comuns na execução de métodos. As vezes é necessário prever e tratar a possível existência.
+- Qual a visibilidade do método?
+    - será necessário que o método seja visível a toda aplicação, somente em mesmo pacotes, através de herança ou somente a nível da própria classe.
